@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+body {
+    background: rgb(27, 27, 27);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 2.4rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color:rgb(201, 201, 77);
+    background: linear-gradient(45deg, darkblue, rgb(93, 24, 107)) 100%;
+    border-radius: 1.2rem;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rosybrown;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor:  not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: linear-gradient(45deg, rgb(184, 207, 52), rgb(170, 53, 194)) 100%;
+    color:black;
+}
+
+#highscore-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 yellow 100%;
+}
+
+.fa-crown {
+    font-size: 2.5rem;
+    margin-left:  1rem;
+}
