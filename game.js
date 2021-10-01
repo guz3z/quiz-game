@@ -12,6 +12,14 @@ let availableQuestions = [];
 
 let questions = [
     {
+        question: "Spot the odd one out",
+        choice1: "var",
+        choice2: "const",
+        choice3: "let",
+        choice4: "function",
+        answer: 4,
+    },
+    {
         question: "In which year was the WWW invented?",
         choice1: "1994",
         choice2: "1991",
@@ -44,19 +52,11 @@ let questions = [
         answer: 1,
     },
     {
-        question: "Spot the odd one out",
-        choice1: "var",
-        choice2: "const",
-        choice3: "let",
-        choice4: "function",
+        question: "What will the following code return: Boolean(3>2)",
+        choice1: "undefined",
+        choice2: "false",
+        choice3: "NaN",
+        choice4: "true",
         answer: 4,
-    }
-    {
-        question: "What's the correct code?",
-        choice1: "var",
-        choice2: "const",
-        choice3: "let",
-        choice4: "function",
-        answer: 4,
-    }
+    },
 ]
