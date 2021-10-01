@@ -4,11 +4,11 @@ const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 
-let currentQuestion = []
+let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
-let availableQuestions = [];
+let availableQuestions = []
 
 let questions = [
     {
@@ -83,12 +83,12 @@ getNewQuestion = () => {
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`       //calculates what question the user is on and make a % of that
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions(questionsIndex)
+    currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
 
     choices.forEach(choice => {
         const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice + number']
+        choice.innerText = currentQuestion['choice' + number]
     })
 
     availableQuestions.splice(questionsIndex, 1)
@@ -98,7 +98,7 @@ getNewQuestion = () => {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers)return
+        if(!acceptingAnswers) return
 
         acceptingAnswers = false
         const selectedChoice = e.target
