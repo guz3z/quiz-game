@@ -65,7 +65,7 @@ body {
 #progressBar {
     width: 15rem;
     height: 2rem;
-    border: 0.2rem solid rgb(34, 207, 101);
+    border: 0.2rem solid rosybrown;
     margin-top:1rem;
     border-radius: 1.2rem;
     overflow: hidden;
@@ -74,13 +74,52 @@ body {
 
 #progressBarFull {
     height: 100%;
-    background: rgb(34, 207, 101);
+    background: rosybrown;
     width: 0%;
 }
 
 
-@media screen and (max-width: 760px) {
+@media only screen and (max-width: 760px) {
     .choice-container {
-        min-width: 40rem;
+        display: flex;
+        margin-bottom: 0.8rem;
+        width: 10rem;
+        background: linear-gradient(45deg, rgb(44, 44, 175), rgb(126, 53, 141)) 100%;
+        font-size: 2rem;
+        height: 60px;
+        border-radius: 1rem;
+        margin-left: 5%;
+
     }
+
+    p {
+        font-size: 18px;
+    }
+
+
+    #progressText {
+        font-size: 20px;
+    }
+
+    .hud-prefix {
+        font-size: 20px;
+    }
+
+    #progressBar {
+        width: 170px;
+        height:1.4rem;
+        border: 0.2rem solid rosybrown;
+        margin-top:0.2rem;
+        border-radius: 1.2rem;
+        overflow: hidden;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+
+
 }
+
+

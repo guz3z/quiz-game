@@ -200,3 +200,62 @@ input::placeholder {
     margin-top: -2rem;
 }
 
+
+@media only screen and (max-width: 760px) {
+    
+    .container h1 {
+        font-size: 35px;
+        word-wrap:  normal;
+        margin-top: -10px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .container .fa-laptop-code {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    a.btn {
+        font-size: 30px;
+    }
+    
+    i.fas.fa-crown {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 0.8rem 0;
+        width: 10rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+        color:rgb(201, 201, 77);
+        background: linear-gradient(45deg, darkblue, rgb(93, 24, 107)) 100%;
+        border-radius: 1.2rem;
+    }
+
+    .footer-note {
+        position: absolute;
+        margin-left: 10px;
+        color: white;
+        display: flex;
+    }
+    .footer-note p {
+        margin-left: 10px;
+        color: white;
+        display: flex;
+        font-size: 20px;
+        margin-top: -10px;
+    }
+
+    .logo-z {
+        width: 35px;
+        height: 35px;
+        margin-top: -0.5rem;
+    }
+
+
+
+}
