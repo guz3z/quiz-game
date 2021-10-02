@@ -14,3 +14,24 @@ body {
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
 }
+
+@media only screen and (max-width: 760px) {
+    
+    #highScores h1 {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+
+     #highScoresList li {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .container div {
+        margin-top: -6rem;
+    }
+
+    .go-home-btn {
+        margin-top: 10px;
+    }
+}
