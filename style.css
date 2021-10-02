@@ -2,14 +2,14 @@
 
 
 html, body {
-    width: 100%;
-    height:100%;
+    width: 100vw;
+    height:100vh;
   }
   
   body {
       background: linear-gradient(-45deg, #520303, #3b1625, #084a63, #03251d);
-      background-size: 400% 400%;
-      animation: gradient 12s ease infinite;
+      background-size: 300% 300%;
+      animation: gradient 11s ease infinite;
   }
   
   @keyframes gradient {
@@ -29,7 +29,7 @@ html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Titillium Web', sans-serif;
 
 }
@@ -82,10 +82,10 @@ h2 {
 
 .btn {
     font-size: 2.4rem;
-    padding: 1rem 0;
+    padding: 0.8rem 0;
     width: 20rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-decoration: none;
     color:rgb(201, 201, 77);
     background: linear-gradient(45deg, darkblue, rgb(93, 24, 107)) 100%;
@@ -133,8 +133,8 @@ h2 {
 input {
     margin-bottom: 1rem;
     width: 20rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
+    padding: 1.2rem;
+    font-size: 1.3rem;
     border: none;
     box-shadow: 0 0.4rem 1.4rem 0 rosybrown;
 }
@@ -145,15 +145,16 @@ input::placeholder {
 }
 
 #username {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     width: 100%;
     outline: none;
 }
 
 #end-text {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     color: white;
     text-align: center;
+    margin-bottom: -3px;
 }
 
 #saveScoreBtn {
@@ -170,3 +171,32 @@ input::placeholder {
     font-size: 2rem;
     margin-left: 1rem;
 }
+
+.footer-note {
+    position: absolute;
+    margin-left: 1rem;
+    color: white;
+    display: flex;
+}
+
+.logo-z {
+    width: 60px;
+    height: 60px;
+    margin-top: -0.5rem;
+}
+
+#highScores {
+    margin-bottom: -3rem;
+}
+
+.go-home-btn {
+    margin-top: -1rem;
+}
+
+#finalScore {
+    text-shadow: 3px 3px 3px rgb(116, 116, 25);
+    margin: 1rem 0;
+    font-size: 3.4rem;
+    margin-top: -2rem;
+}
+

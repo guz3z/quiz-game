@@ -1,5 +1,7 @@
 body {
     color: white;
+    width: 100vw;
+    height: 100vh;
 }
 
 .gameH1 {
@@ -30,7 +32,7 @@ body {
 } 
 
 .choice-text {
-    padding: 0.3rem 0.5rem;
+    padding: 0.4rem 0.5rem;
     width: 100%;
 }
  

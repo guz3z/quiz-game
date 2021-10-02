@@ -11,20 +11,21 @@
 </head>
 <body>
     <div class="container">
-        <div id="end" class="flex-center flex-column">
+        <div id="end-text" class="flex-center flex-column">
             <h1 id="finalScore">0</h1>
             <form class="end-form-container">
-                <h1 id="end-text">Enter your name to <br>save your score!</h1>
+                <h1 id="end-text">Join the leaderboard!</h1>
                 <input type="text" name="name" id="username" placeholder="Enter your name">
                 <button class="btn" id="saveScoreBtn" type="submit"
                 onclick="saveHighScore(event)" disabled>Save</button>
             </form>
             <a href="/game.html" class="btn">Play again</a>
-            <a href="/" class="btn">Go home<i class="fas fa-home"></i></a>   
+            <a href="/" class="btn" id="gHbtn">Go home<i class="fas fa-home"></i></a>   
         </div>
     </div>
     <div class="footer-note">
-        <p>Created by Zerh Guzman, 2021</p>
+        <p>Created by Zerhjosh Guzman, 2021</p>
+        <img src="img/zgj.png" alt="ZJG logo" class="logo-z" title="ZJG logo">
     </div>
     <script src="end.js"></script>
 

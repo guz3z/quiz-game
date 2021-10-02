@@ -1,13 +1,15 @@
 body {
     color:white;
+    width: 100vw;
+    height: 100vh;
 }
 
 #highScoresList {
     list-style: none;
-    margin-bottom: 4rem;
+    margin-bottom: 0.7rem;
 }
 
 .high-score {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
 }
