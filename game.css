@@ -1,0 +1,125 @@
+body {
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.gameH1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 80vw;
+    background: linear-gradient(45deg, rgb(44, 44, 175), rgb(126, 53, 141)) 100%;
+    font-size: 3rem;
+    height: 70px;
+    border-radius: 1rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rosybrown;
+    transform:  scale(1.02);
+    transform: transform 100ms;
+} 
+
+.choice-prefix {
+    padding: 0.4rem 0.5rem;
+    color: white;
+} 
+
+.choice-text {
+    padding: 0.4rem 0.5rem;
+    width: 100%;
+}
+ 
+
+/*When user gets answer correct/incorrect*/
+.correct {
+    background: linear-gradient(32deg, rgba(11, 223,36) 0%, rgb(41, 232,111) 100%);
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgba(224, 11, 11, 1) 100%);
+}
+
+
+/*HUD*/
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 15rem;
+    height: 2rem;
+    border: 0.2rem solid rosybrown;
+    margin-top:1rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rosybrown;
+    width: 0%;
+}
+
+
+@media only screen and (max-width: 760px) {
+    .choice-container {
+        display: flex;
+        margin-bottom: 0.8rem;
+        width: 10rem;
+        background: linear-gradient(45deg, rgb(44, 44, 175), rgb(126, 53, 141)) 100%;
+        font-size: 2rem;
+        height: 60px;
+        border-radius: 1rem;
+        margin-left: 5%;
+
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+
+    #progressText {
+        font-size: 20px;
+    }
+
+    .hud-prefix {
+        font-size: 20px;
+    }
+
+    #progressBar {
+        width: 170px;
+        height:1.4rem;
+        border: 0.2rem solid rosybrown;
+        margin-top:0.2rem;
+        border-radius: 1.2rem;
+        overflow: hidden;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+
+
+}
+
+

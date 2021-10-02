@@ -1,0 +1,5 @@
+@media only screen and (max-width: 760px) {
+    #finalScore h1 {
+        font-size: 30px;
+    }
+}

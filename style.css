@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+
+html, body {
+    width: 100vw;
+    height:100vh;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #520303, #3b1625, #084a63, #03251d);
+      background-size: 300% 300%;
+      animation: gradient 11s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 2.4rem;
+    padding: 0.8rem 0;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color:rgb(201, 201, 77);
+    background: linear-gradient(45deg, darkblue, rgb(93, 24, 107)) 100%;
+    border-radius: 1.2rem;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rosybrown;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor:  not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: linear-gradient(45deg, rgb(184, 207, 52), rgb(170, 53, 194)) 100%;
+    color:black;
+}
+
+#highscore-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 yellow 100%;
+}
+
+.fa-crown {
+    font-size: 2.5rem;
+    margin-left:  1rem;
+}
+
+/* End Page CSS */
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20rem;
+
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    border: none;
+    box-shadow: 0 0.4rem 1.4rem 0 rosybrown;
+}
+
+
+input::placeholder {
+    color: rgb(179, 171, 171);
+}
+
+#username {
+    margin-bottom: 2rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: -3px;
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+.fa-home {
+    margin-left: 1rem;
+    font-size:2rem;
+    color: rgb(201, 201, 77);
+}
+
+.fa-laptop-code {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.footer-note {
+    position: absolute;
+    margin-left: 1rem;
+    color: white;
+    display: flex;
+}
+
+.logo-z {
+    width: 60px;
+    height: 60px;
+    margin-top: -0.5rem;
+}
+
+#highScores {
+    margin-bottom: -3rem;
+}
+
+.go-home-btn {
+    margin-top: -1rem;
+}
+
+#finalScore {
+    text-shadow: 3px 3px 3px rgb(116, 116, 25);
+    margin: 1rem 0;
+    font-size: 3.4rem;
+    margin-top: -2rem;
+}
+
+
+@media only screen and (max-width: 760px) {
+    
+    .container h1 {
+        font-size: 35px;
+        word-wrap:  normal;
+        margin-top: -10px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .container .fa-laptop-code {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    a.btn {
+        font-size: 30px;
+    }
+    
+    i.fas.fa-crown {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 0.8rem 0;
+        width: 10rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+        color:rgb(201, 201, 77);
+        background: linear-gradient(45deg, darkblue, rgb(93, 24, 107)) 100%;
+        border-radius: 1.2rem;
+    }
+
+    .footer-note {
+        position: absolute;
+        margin-left: 10px;
+        color: white;
+        display: flex;
+    }
+    .footer-note p {
+        margin-left: 10px;
+        color: white;
+        display: flex;
+        font-size: 20px;
+        margin-top: -10px;
+    }
+
+    .logo-z {
+        width: 35px;
+        height: 35px;
+        margin-top: -0.5rem;
+    }
+
+    #end-text h1 {
+        font-size: 40px;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    #saveScoreBtn {
+        font-size: 30px;
+    }
+
+
+
+
+}

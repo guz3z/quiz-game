@@ -7,20 +7,21 @@
     <link rel="icon" href="img/comp.png" type="image/x-icon">
     <title>TechKnowledgy Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="highscores.css">
     <script src="https://kit.fontawesome.com/8d09fb6248.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <h1>Test your TechKnowledgy!<i class="fas fa-laptop-code"></i></h1>
-            <a href="/game.html" class="btn">Play</a>
-            <a href="/highscores.html" class="btn" id="highscore-btn">Leaderboard<i class="fas fa-crown"></i></a>
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Leaderboard</h1>
+            <ul id="highScoresList" class="hSL"></ul>
+            <a href="/" class="btn go-home-btn">Go home<i class="fas fa-home"></i></a>
         </div>
     </div>
-
     <div class="footer-note">
         <p>Created by Zerhjosh Guzman, 2021</p>
         <img src="img/zgj.png" alt="ZJG logo" class="logo-z" title="ZJG logo">
     </div>
+    <script src="highscores.js"></script>
 </body>
 </html>
