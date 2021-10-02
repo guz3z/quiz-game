@@ -256,6 +256,18 @@ input::placeholder {
         margin-top: -0.5rem;
     }
 
+    #end-text h1 {
+        font-size: 40px;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    #saveScoreBtn {
+        font-size: 30px;
+    }
+
 
 
 }
